@@ -8,6 +8,7 @@ module.exports = {
     author: `doitduri`,
   },
   plugins: [
+    `gatsby-plugin-typescript`,
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {
