@@ -4,8 +4,10 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
+    url: 'https://doitduri.me',
     title: `do it, duri`,
     author: `doitduri`,
+    disqusShortname: 'blog-catsmc82n9',
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -68,5 +70,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
+
   ],
 }
