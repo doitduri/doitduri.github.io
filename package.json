@@ -1,11 +1,15 @@
 {
   "private": true,
-  "name": "minimal-blog",
-  "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
+  "name": "doitduri-blog",
+  "description": "duri's dev blog",
   "version": "1.0.1",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "doitduri <doitduri@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-minimal-blog",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/doitduri/doitduri.github.io"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -13,7 +17,9 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/doitduri/doitduri.github.io"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^2.0.1",
@@ -28,6 +34,8 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
+    "gh-pages": "2.0.0"
   }
 }
+

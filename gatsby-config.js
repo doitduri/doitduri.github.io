@@ -4,7 +4,8 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    title: `do it, duri`,
+    author: `doitduri`,
   },
   plugins: [
     {
