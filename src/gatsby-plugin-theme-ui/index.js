@@ -43,8 +43,7 @@ export default {
   useCustomProperties: true,
   colors: {
     ...tailwind.colors,
-    // primary: tailwind.colors.purple[7],
-    primary: `#193F80`, // 색상 변경
+    primary: `#0F4C81`,//tailwind.colors.purple[7],
     secondary: `#5f6c80`,
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
@@ -52,7 +51,7 @@ export default {
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
-        primary: `#193F80`, // 색상 변경
+        primary: tailwind.colors.purple[5],
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],
         background: `#1A202C`,
