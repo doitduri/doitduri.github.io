@@ -4,9 +4,12 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    url: 'https://doitduri.me',
+    siteTitle: `do it, duri`,
+    siteTitleAlt: `do it, duri`,
+    siteHeadline: `일상과 개발 활동들을 기록합니다.`,
+    siteUrl: 'https://doitduri.me',
     title: `do it, duri`,
-    author: `doitduri`,
+    author: `@doitduri`,
     disqusShortname: 'blog-catsmc82n9',
   },
   plugins: [
@@ -20,26 +23,26 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `tag`,
+            slug: `/tag`,
           },
         ],
-        externalLinks: [
-          {
-            name: `github`,
-            url: `github.com/doitduri`,
-          },
-          {
-            name: `facebook`,
-            url: `https://www.facebook.com/doitduri`,
-          },
-        ],
+        // externalLinks: [
+        //   {
+        //     name: `github`,
+        //     url: `github.com/doitduri`,
+        //   },
+        //   {
+        //     name: `facebook`,
+        //     url: `https://www.facebook.com/doitduri`,
+        //   },
+        // ],
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: `UA-158361574-1`,
       },
     },
     `gatsby-plugin-sitemap`,

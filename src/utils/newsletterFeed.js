@@ -31,7 +31,7 @@ module.exports = {
           allPost(sort: { fields: date, order: DESC }) {
             nodes {
               title
-              date(formatString: "MMMM D, YYYY")
+              date(formatString: "YYYY MMMM D")
               excerpt
               slug
               html
@@ -40,7 +40,7 @@ module.exports = {
         }
       `,
       output: `rss.xml`,
-      title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+      title: `do it, duri`,
     },
   ],
 }
