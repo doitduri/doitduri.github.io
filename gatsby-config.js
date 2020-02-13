@@ -9,7 +9,7 @@ module.exports = {
     siteHeadline: `일상과 개발 활동들을 기록합니다.`,
     siteUrl: 'https://doitduri.me',
     title: `do it, duri`,
-    author: `@doitduri`,
+      author: `@doitduri`,
     disqusShortname: 'blog-catsmc82n9',
   },
   plugins: [
@@ -23,8 +23,8 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `tag`,
-            slug: `/tag`,
+            title: `tags`,
+            slug: `/tags`,
           },
         ],
         // externalLinks: [
@@ -49,9 +49,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `do it, duri`,
+        short_name: `doitduri`,
+        description: `일상과 개발 활동들을 기록합니다.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
