@@ -49,25 +49,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `do it, duri`,
+        name: `doitduri`,
         short_name: `doitduri`,
         description: `일상과 개발 활동들을 기록합니다.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
       },
     },
     `gatsby-plugin-offline`,
