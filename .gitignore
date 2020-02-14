@@ -1,0 +1,16 @@
+# dotenv environment variables file
+.env
+.env.*
+!.env.example
+
+.cache
+**/.cache
+
+.idea
+.vscode
+.DS_Store
+
+notion
+build.sh
+netlify.toml
+
