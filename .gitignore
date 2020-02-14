@@ -67,6 +67,7 @@ public
 .idea
 .vscode
 .DS_Store
+
 notion
 build.sh
 netlify.toml
