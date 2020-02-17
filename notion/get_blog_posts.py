@@ -62,12 +62,13 @@ description: ""
     title = title.lower()
 
     try:
-        os.mkdir('../content/posts/' + title)
+
+        os.mkdir('doitduri.github.io/content/posts/' + title)
     except:
         pass
         print("fail")
 
-    file = open('../content/posts/' + title + '/index.mdx', 'w')
+    file = open('doitduri.github.io/content/posts/' + title + '/index.mdx', 'w')
     print('Wrote A New Page')
     print(text)
     file.write(text)
