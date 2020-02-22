@@ -1,6 +1,4 @@
 # build.sh
-pip install pipenv
-
 echo "Starting build"
 cd notion
 pipenv install
