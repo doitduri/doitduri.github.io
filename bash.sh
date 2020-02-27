@@ -1,7 +1,6 @@
 # build.sh
 echo "Starting build"
 cd notion
-pipenv install
 
 echo "Get posts"
 pipenv run python get_blog_posts.py
