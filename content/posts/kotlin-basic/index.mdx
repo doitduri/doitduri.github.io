@@ -1,0 +1,152 @@
+---
+title: Kotlin Basic
+date: "2020-02-27 19:23:19.496711"
+description: ""
+---
+
+# Kotlin Basic
+
+
+
+### check again
+
+✅ String class 
+✅ nulll mark
+✅ return - label
+
+
+---
+## 1. Function
+
+1) fun keyword
+2) return
+
+## 2. Variable
+
+1) 지역 변수
+
+## 3. nullable mark ?
+
+값이 null 일 수 있는 경우 반드시 체크해야 함
+그렇지 않으면 컴파일 오류 발생
+
+## 4. 자동 타입 변환
+
+타입 체크만 해도 자동으로 타입 변환이 됨
+
+## 5. when expression
+
+```
+fun describe(obj: Any): String = 
+	when (obj) {
+			1 -> "one"
+			"Hello" -> "Greeting"
+			is Long -> "Long"
+			!is String -> "Not a string"
+			else       -> "Unknown"
+}
+```
+  
+## 6. Collections
+
+in 연산자를 통해 포함 유무 확인
+람다식을 이용해서 filter, map 등의 연산 가능
+```
+val fruits = listOf("banana", "avocado", "apple", "kiwi")
+fruits.filter{it.startsWith("a")}
+			.sortedBy {it}
+			.map{it.toUpperCase()}
+			.forEach{println(it)}
+```
+
+---
+## 7. Type
+
+* 모든 타입은 primitive type이 아닌 Object
+* 숫자 입력 시 _ 로 구분해서 사용할 수 있음
+* 작은 타입은 큰 타입의 하위 타입이 아님 (=작은 타입에서 큰 타입으로 대입 안됨)
+* 문자는 숫자로 취급되지 않음
+'0'.toInt();
+* 문자열은 String class로 구현
+* immutable
+
+## 8. Control Flow
+
+삼항 연산자 없음
+when keyword는 switch 문을 대체함
+만족할 때까지 위부터 순차적으로 인자 비교
+여러 조건인 경우 콤마(,) 사용해서 표기
+
+for 문을 지원하는 iterator 조건
+
+indices
+배열이나 리스트를 반복할 때 index 사용하고 싶을 때 사용
+```
+for (i in array.indices){
+	println("$i: ${array[i]}")
+}
+```
+
+withIndex()
+index 이용하고 싶을 때
+```
+for ( (index, value) in array.withIndex()) {
+	println("$index: ${value}")
+}
+```
+
+## 9. return
+
+jump 표현식
+
+9-2. Label로 break, continue
+
+---
+## 10. class
+
+option) class header, body, {}
+1) 기본 생성자
+2) property
+3) 보조 생성자
+
+4) instance 생성
+
+## 11. Inheritance
+
+1) Any
+2) 상속
+3) method overriding
+4) property overriding
+
+5) Overriding 규칙
+같은 멤버에 대한 중복된 구현을 상속 받은 경우
+상속 받은 클래스는 해당 멤버를 오버라이딩하고, 자체 구현을 제공해야함
+super + <className>을 통해 상위 클래스 호출 가능
+```
+interface B {
+	fun f() {println("B")}
+	...
+}
+
+open class A {
+	open fun f() {println("A")}
+	...
+}
+
+class C(): A(), B{
+	override fun f() {
+		super<A>.f() // call to A.f()
+		super<B>.f() // call to B.f()
+	}
+}
+```
+
+6) 추상 클래스
+## 12. property
+
+var (mutalbe) / val (read-only)
+
+
+
+
+

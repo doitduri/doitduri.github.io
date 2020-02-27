@@ -1,0 +1,73 @@
+---
+title: TIL
+date: "2020-02-27 19:23:20.800487"
+description: ""
+---
+
+# TIL
+
+
+2019.12.24
+
+kotlin-android-extensions
+→ findViewById() 안해도 됨
+→ 레이아웃 내 선언된 각 뷰에 대한 인스턴스를 받기 위해 사용되는 함수 (한 화면을 구성하는 인스턴스가 많은 경우 꽤 많은 코드를 차지하게 되고, 또 뷰 인스턴스를 받는 과정에서 잘못된 id를 받는 경우 null이 반환됨)
+
+
+intent 
+** Activity 추가 후 Mainifiest.xml 파일에 해당 Activity 추가해줘야 함
+
+putExtra 해서 가져온 값은 null check를 하지 않으면 
+잘못된 값을 꺼내올 수 있으니, if hasExtra 구문을 통해 체크하는 것이 좋음
+
+전달할 데이터의 개수가 많다면 Parcelable 클래스를 이용하자!
+→ 클래스에 있는 데이터 형식을 바꾸어서 Acitivity → Activity 등에 전달할 수 있게 하는 interface
+→ (비유) file을 zip 형식으로 압축해서 이동 완료 후 압축을 푸는 것과 비슷
+→ Java, implement / Kotlin, 클래스 뒤에 : 를 붙여 사용
+
+
+
+정규식
+Kotlin에서 Java에는 없는 여러 구분자를 처리할 수 있는 확장함수 제공
+이메일로 썼던 정규표현식
+```
+val rege_email = Regex("^[a-zA-X0-9]@[a-zA-Z0-9].[a-zA-Z0-9]")
+```
+
+
+addTextChangedListener
+params → TextWatcher
+
+override
+
+
+
+2020.01.07.
+AnroidX
+KTX 종속성 추가 해야 하고, 각 아키텍처 구성요소에 따라 해야 함
+* ViewModelScope
+* LifecycleScope
+* liveData
+
+→ 안드로이드에서는, 2가지 쓰레드가 있음
+** Thread? 백그라운드로 돌려놓고 다른 여러가지 일을 하는 것
+예를 들어, 밥 먹을 때 취사 버튼을 누르고 밥이 다 되어가는 동안 식탁을 차리는 것과 유사
+
+ 2. work
+
+
+ViewModel
+
+[https://developer.android.com/reference/androidx/lifecycle/ViewModel?hl=en](https://developer.android.com/reference/androidx/lifecycle/ViewModel?hl=en)[https://developer.android.com/topic/libraries/architecture/viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+Databinding
+
+lateinit
+
+suspend
+
+fragment
+
+
+constraintlayout 개념 익히기
+
